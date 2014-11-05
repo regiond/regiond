@@ -1,0 +1,15 @@
+CMakeFiles
+CMakeScripts
+CMakeCache.txt
+cmake_install.cmake
+
+Makefile
+regiond.build
+regiond.xcodeproj
+
+*.sublime-workspace
+*.swp
+
+*.o
+/bin
+

@@ -1,0 +1,8 @@
+language: cpp
+compiler: clang
+before_install:
+  - wget "http://pocoproject.org/releases/poco-1.5.2/poco-1.5.2.tar.gz"
+  - tar -xzvf poco-1.5.2.tar.gz
+  - "cd poco-1.5.2 && ./configure --prefix=/usr --no-tests --no-samples --omit=Crypto,Data,MongoDB,MySQL,NetSSL_OpenSSL,ODBC,SQLite,XML,Zip && make --quiet && sudo make install && cd .."
+script:
+  - make
