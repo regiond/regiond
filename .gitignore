@@ -12,4 +12,5 @@ regiond.xcodeproj
 
 *.o
 /bin
+/docs
 
