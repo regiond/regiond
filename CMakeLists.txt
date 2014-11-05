@@ -12,16 +12,11 @@ add_subdirectory(src)
 # Automatically build documentation, if Doxygen is installed
 find_package(Doxygen)
 if(DOXYGEN_FOUND)
-	set(NULLPIPE ">/dev/null")
-	if(WIN32)
-		set(NULLPIPE ">NUL")
-	endif()
-	
 	add_custom_target(docs ALL
 		${DOXYGEN_EXECUTABLE} ${CMAKE_SOURCE_DIR}/Doxyfile > /dev/null
 		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 		VERBATIM
 	)
 else()
-	warning("Doxygen wasn't found; can't build documentation!")
+	warning("Doxygen wasn't found; can't build documentation (or warn about undocumented code)")
 endif()
