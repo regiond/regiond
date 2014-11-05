@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
 	for (int i = 0; i < argc; ++i)
 		args.push_back(std::string(argv[i]));
 	
-	Application app;
-	return app.main(args);
+	Application app(args);
+	return app.run();
 }

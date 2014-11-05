@@ -9,7 +9,10 @@ namespace regiond
 	class Application
 	{
 	public:
-		int main(std::vector<std::string> args);
+		Application(std::vector<std::string> args);
+		virtual ~Application();
+		
+		int run();
 	};
 }
 
