@@ -5,17 +5,20 @@
 
 namespace regiond
 {
-	using namespace boost::asio;
-	
-	class socks_server
+	namespace socks
 	{
-	public:
-		socks_server(io_service &service);
-		virtual ~socks_server();
+		using namespace boost::asio;
 		
-	protected:
-		io_service &service;
-	};
+		class socks_server
+		{
+		public:
+			socks_server(io_service &service);
+			virtual ~socks_server();
+			
+		protected:
+			io_service &service;
+		};
+	}
 }
 
 #endif
