@@ -11,7 +11,7 @@ namespace regiond
 	 * 
 	 * This doesn't do much itself, it's basically a glorified main().
 	 */
-	class Application
+	class application
 	{
 	public:
 		/**
@@ -19,9 +19,9 @@ namespace regiond
 		 * 
 		 * @arg args The application's commandline arguments, if any
 		 */
-		Application(std::vector<std::string> args);
+		application(std::vector<std::string> args);
 		
-		virtual ~Application();
+		virtual ~application();
 		
 		/**
 		 * Runs the application.

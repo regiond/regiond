@@ -1,5 +1,5 @@
-#ifndef SOCKSSERVER_H
-#define SOCKSSERVER_H
+#ifndef SOCKS_SERVER_H
+#define SOCKS_SERVER_H
 
 #include <boost/asio.hpp>
 
@@ -7,11 +7,11 @@ namespace regiond
 {
 	using namespace boost::asio;
 	
-	class SOCKSServer
+	class socks_server
 	{
 	public:
-		SOCKSServer(io_service &service);
-		virtual ~SOCKSServer();
+		socks_server(io_service &service);
+		virtual ~socks_server();
 		
 	protected:
 		io_service &service;
