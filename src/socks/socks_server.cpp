@@ -14,3 +14,8 @@ socks_server::~socks_server()
 {
 	
 }
+
+bool socks_server::bind(ip::tcp::endpoint ep)
+{
+	return false;
+}
