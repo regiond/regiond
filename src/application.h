@@ -23,6 +23,8 @@ namespace regiond
 		
 		virtual ~application();
 		
+		
+		
 		/**
 		 * Runs the application.
 		 * 

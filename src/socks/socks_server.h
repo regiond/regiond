@@ -30,7 +30,10 @@ namespace regiond
 			 * This does not actually bind to a port, use bind() for that.
 			 */
 			socks_server(io_service &service);
+			
 			virtual ~socks_server();
+			
+			
 			
 			/**
 			 * Binds the server to the specified endpoint.
