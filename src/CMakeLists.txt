@@ -1,6 +1,6 @@
 # Locate and include Boost; we only want static libs though
 set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost 1.56.0)
+find_package(Boost 1.56.0 COMPONENTS system REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
 # Find all sources
